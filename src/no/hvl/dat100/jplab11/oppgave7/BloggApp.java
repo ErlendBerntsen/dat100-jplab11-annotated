@@ -8,6 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
 
+import no.hvl.annotations.Exercise;
 import no.hvl.dat100.jplab11.oppgave2.Bilde;
 import no.hvl.dat100.jplab11.oppgave2.Tekst;
 import no.hvl.dat100.jplab11.oppgave3.Blogg;

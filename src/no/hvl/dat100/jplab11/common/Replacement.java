@@ -10,6 +10,7 @@ public class Replacement {
         throw new UnsupportedOperationException("Not implemented");
     }
 
+
     public int faculty(int x) {
         int n = 1;
         SolutionStart start;
