@@ -10,20 +10,20 @@ public class Blogg {
 	@Exercise(id = {3,1}, transformOption = TransformOption.REMOVE_EVERYTHING)
 	private int nesteledig;
 	@Exercise(id = {3,1}, transformOption = TransformOption.REMOVE_EVERYTHING)
-	private BlogPost[] innleggtabell;
+	private Innlegg[] innleggtabell;
 	@Remove
 	private static int LENGDE = 20;
 
 	@Exercise(id = {3,2}, transformOption = TransformOption.REPLACE_BODY)
 	public Blogg() {
 		nesteledig = 0;
-		innleggtabell = new BlogPost[LENGDE];
+		innleggtabell = new Innlegg[LENGDE];
 	}
 
 	@Exercise(id = {3,2}, transformOption = TransformOption.REPLACE_BODY)
 	public Blogg(int lengde) {
 		nesteledig = 0;
-		innleggtabell = new BlogPost[lengde];
+		innleggtabell = new Innlegg[lengde];
 	}
 
 	@Exercise(id = {3,3}, transformOption = TransformOption.REPLACE_BODY)
@@ -32,12 +32,12 @@ public class Blogg {
 	}
 
 	@Exercise(id = {3,4}, transformOption = TransformOption.REPLACE_BODY)
-	public BlogPost[] getSamling() {
+	public Innlegg[] getSamling() {
 		return innleggtabell;
 	}
 
 	@Exercise(id = {3,5}, transformOption = TransformOption.REPLACE_BODY)
-	public int finnInnlegg(BlogPost blogPost) {
+	public int finnInnlegg(Innlegg blogPost) {
 
 		int index = -1;
 		int i = 0;
@@ -53,7 +53,7 @@ public class Blogg {
 	}
 
 	@Exercise(id = {3,6}, transformOption = TransformOption.REPLACE_BODY)
-	public boolean finnes(BlogPost blogPost) {
+	public boolean finnes(Innlegg blogPost) {
 		return (finnInnlegg(blogPost) >= 0);
 	}
 
@@ -63,7 +63,7 @@ public class Blogg {
 	}
 
 	@Exercise(id = {3,8}, transformOption = TransformOption.REPLACE_BODY)
-	public boolean leggTil(BlogPost blogPost) {
+	public boolean leggTil(Innlegg blogPost) {
 
 		boolean lagttil = false;
 		
@@ -89,7 +89,7 @@ public class Blogg {
 
 	@Exercise(id = {3,10}, transformOption = TransformOption.REPLACE_BODY)
 	public void utvid() {
-		BlogPost[] nytabell = new BlogPost[2 * innleggtabell.length];
+		Innlegg[] nytabell = new Innlegg[2 * innleggtabell.length];
 
 		for (int i = 0; i < nesteledig; i++) {
 			nytabell[i] = innleggtabell[i];
@@ -99,7 +99,7 @@ public class Blogg {
 	}
 
 	@Exercise(id = {3,11}, transformOption = TransformOption.REPLACE_BODY)
-	public boolean leggTilUtvid(BlogPost blogPost) {
+	public boolean leggTilUtvid(Innlegg blogPost) {
 
 		boolean lagttil = false;
 		
@@ -118,7 +118,7 @@ public class Blogg {
 	}
 
 	@Exercise(id = {3,12}, transformOption = TransformOption.REPLACE_BODY)
-	public void slett(BlogPost blogPost) {
+	public void slett(Innlegg blogPost) {
 		
 		int index = finnInnlegg(blogPost);
 		

@@ -31,9 +31,9 @@ public class TestBlogg {
 	public void testleggTil() {
 		Blogg samling = new Blogg(40);
 	
-		TBlogPost innlegg1 = new TBlogPost(1,"Ole Olsen","23-10");
-		TBlogPost innlegg2 = new TBlogPost(2,"Oline Olsen","24-10");
-		TBlogPost innlegg3 = new TBlogPost(3,"Oda Olsen","24-10");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
+		TInnlegg innlegg3 = new TInnlegg(3,"Oda Olsen","24-10");
 		
 		assertTrue(samling.leggTil(innlegg1));
 		assertTrue(samling.leggTil(innlegg2));
@@ -54,8 +54,8 @@ public class TestBlogg {
 		Blogg samling1 = new Blogg(40);
 		Blogg samling2 = new Blogg(2);
 		
-		TBlogPost innlegg1 = new TBlogPost(1,"Ole Olsen","23-10");
-		TBlogPost innlegg2 = new TBlogPost(2,"Oline Olsen","24-10");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
 		
 		samling1.leggTil(innlegg1);
 		samling1.leggTil(innlegg2);
@@ -71,8 +71,8 @@ public class TestBlogg {
 	public void testutvid() {
 		Blogg samling = new Blogg(2);
 		
-		TBlogPost innlegg1 = new TBlogPost(1,"Ole Olsen","23-10");
-		TBlogPost innlegg2 = new TBlogPost(2,"Oline Olsen","24-10");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
 
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
@@ -93,8 +93,8 @@ public class TestBlogg {
 	
 		Blogg samling = new Blogg(2);
 		
-		TBlogPost innlegg1 = new TBlogPost(1,"Ole Olsen","23-10");
-		TBlogPost innlegg2 = new TBlogPost(2,"Oline Olsen","24-10");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
 
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);

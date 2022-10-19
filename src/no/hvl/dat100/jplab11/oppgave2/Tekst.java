@@ -4,7 +4,7 @@ import no.hvl.annotations.Exercise;
 import no.hvl.annotations.TransformOption;
 import no.hvl.dat100.jplab11.oppgave1.*;
 
-public class Tekst extends BlogPost {
+public class Tekst extends Innlegg {
 
 	@Exercise(id={2,2}, transformOption = TransformOption.REMOVE_EVERYTHING)
 	private String tekst;

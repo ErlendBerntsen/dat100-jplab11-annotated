@@ -31,7 +31,7 @@ public class LesBlogg {
 			int antall = Integer.parseInt(line);
 
 			samling = new Blogg(antall);
-			BlogPost blogPost = null;
+			Innlegg innlegg = null;
 
 			while (antall > 0) {
 				line = reader.readLine();
@@ -44,14 +44,14 @@ public class LesBlogg {
 
 				if (line.equals(BILDE)) {
 					String bilde = reader.readLine();
-					blogPost = new Bilde(id, bruker, dato, likes, tekst, bilde);
+					innlegg = new Bilde(id, bruker, dato, likes, tekst, bilde);
 				} else if (line.equals(TEKST)) {
-					blogPost = new Tekst(id, bruker, dato, likes, tekst);
+					innlegg = new Tekst(id, bruker, dato, likes, tekst);
 				} else {
 					System.out.println("Feil i format");
 				}
 
-				samling.leggTil(blogPost);
+				samling.leggTil(innlegg);
 				antall--;
 			}
 
