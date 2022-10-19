@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>dat100-jplab11-complete-master</artifactId>
+    <artifactId>dat100-jplab11-solution-annotated</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>no.hvl</groupId>
-            <artifactId>paf-annotations</artifactId>
+            <artifactId>freja-annotations</artifactId>
             <version>1.1</version>
         </dependency>
         <dependency>
@@ -34,18 +34,18 @@
         <plugins>
             <plugin>
                 <groupId>no.hvl</groupId>
-                <artifactId>paf-maven-plugin</artifactId>
+                <artifactId>freja-maven-plugin</artifactId>
                 <version>1.1</version>
                 <configuration>
-                    <targetPath>C:\Users\Acer\IntelliJProjects\dat100-jplab11-complete-master-output</targetPath>
+                    <targetPath>C:\Users\Acer\IntelliJProjects\dat100-jplab11-output</targetPath>
                     <ignore>
                         <ignore>target</ignore>
                         <ignore>**.iml</ignore>
                         <ignore>.idea</ignore>
+                        <ignore>.gitignore</ignore>
                     </ignore>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 

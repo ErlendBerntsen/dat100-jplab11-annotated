@@ -2,7 +2,6 @@ package no.hvl.dat100.jplab11.oppgave1;
 
 import no.hvl.annotations.Exercise;
 import no.hvl.annotations.TransformOption;
-import no.hvl.dat100.jplab11.common.TODO;
 
 public abstract class Innlegg {
 	
@@ -17,7 +16,7 @@ public abstract class Innlegg {
 	@Exercise(id = {1,1}, transformOption = TransformOption.REMOVE_EVERYTHING)
 	private int id;
 
-	@Exercise(id={1,2}, transformOption = TransformOption.REPLACE_BODY, replacementId = "1")
+	@Exercise(id={1,2}, transformOption = TransformOption.REPLACE_BODY)
 	public Innlegg(int id, String bruker, String dato) {
 		this.id = id;
 		this.bruker = bruker;
