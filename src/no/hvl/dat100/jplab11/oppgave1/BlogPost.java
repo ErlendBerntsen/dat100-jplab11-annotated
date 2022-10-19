@@ -78,7 +78,7 @@ public abstract class Innlegg {
 		return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
 	}
 
-	@Exercise(id={6}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={6,1}, transformOption = TransformOption.REPLACE_BODY)
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		

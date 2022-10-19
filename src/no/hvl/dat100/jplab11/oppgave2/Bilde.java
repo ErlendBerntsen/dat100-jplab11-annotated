@@ -5,32 +5,32 @@ import no.hvl.annotations.TransformOption;
 
 public class Bilde extends Tekst {
 
-	@Exercise(id={2}, transformOption = TransformOption.REMOVE_EVERYTHING)
+	@Exercise(id={2,1}, transformOption = TransformOption.REMOVE_EVERYTHING)
 	private String url;
 
-	@Exercise(id={2}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={2,1}, transformOption = TransformOption.REPLACE_BODY)
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
 		super(id, bruker, dato, tekst);
 		this.url = url;
 	}
 
-	@Exercise(id={2}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={2,1}, transformOption = TransformOption.REPLACE_BODY)
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
 		super(id, bruker, dato, likes,tekst);
 		this.url = url;
 	}
 
-	@Exercise(id={2}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={2,1}, transformOption = TransformOption.REPLACE_BODY)
 	public String getUrl() {
 		return url;
 	}
 
-	@Exercise(id={2}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={2,1}, transformOption = TransformOption.REPLACE_BODY)
 	public void setUrl(String url) {
 		this.url = url;
 	}
 
-	@Exercise(id={2}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={2,1}, transformOption = TransformOption.REPLACE_BODY)
 	@Override
 	public String toString() {
 		return 
@@ -44,7 +44,7 @@ public class Bilde extends Tekst {
 
 	}
 
-	@Exercise(id={6}, transformOption = TransformOption.REPLACE_BODY)
+	@Exercise(id={6,2}, transformOption = TransformOption.REPLACE_BODY)
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		

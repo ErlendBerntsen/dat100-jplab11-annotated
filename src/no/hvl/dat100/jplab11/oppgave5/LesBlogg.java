@@ -1,20 +1,15 @@
 package no.hvl.dat100.jplab11.oppgave5;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Scanner;
 
 import no.hvl.annotations.Exercise;
 import no.hvl.annotations.TransformOption;
 import no.hvl.dat100.jplab11.oppgave1.*;
 import no.hvl.dat100.jplab11.oppgave2.*;
 import no.hvl.dat100.jplab11.oppgave3.*;
-
-import javax.swing.JOptionPane;
 
 public class LesBlogg {
 
@@ -36,7 +31,7 @@ public class LesBlogg {
 			int antall = Integer.parseInt(line);
 
 			samling = new Blogg(antall);
-			Innlegg innlegg = null;
+			BlogPost blogPost = null;
 
 			while (antall > 0) {
 				line = reader.readLine();
@@ -49,14 +44,14 @@ public class LesBlogg {
 
 				if (line.equals(BILDE)) {
 					String bilde = reader.readLine();
-					innlegg = new Bilde(id, bruker, dato, likes, tekst, bilde);
+					blogPost = new Bilde(id, bruker, dato, likes, tekst, bilde);
 				} else if (line.equals(TEKST)) {
-					innlegg = new Tekst(id, bruker, dato, likes, tekst);
+					blogPost = new Tekst(id, bruker, dato, likes, tekst);
 				} else {
 					System.out.println("Feil i format");
 				}
 
-				samling.leggTil(innlegg);
+				samling.leggTil(blogPost);
 				antall--;
 			}
 
